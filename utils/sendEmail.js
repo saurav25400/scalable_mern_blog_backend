@@ -16,7 +16,7 @@ const sendEmail = async (to, resetToken) => {
     });
     //create msg
     const message = {
-      to,
+      to:to,
       subject: "Password reset",
       html: `
         <p>You are receiving this email because you (or someone else) have requested the reset of a password.</p>
